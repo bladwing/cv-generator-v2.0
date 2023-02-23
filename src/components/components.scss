@@ -1,0 +1,15 @@
+.Side-Container {
+        display: flex;
+        border: 1px solid green;
+        height: 950px;
+        justify-content: space-around;
+        .First-Side{
+            border: 1px solid red;
+            width: 60%;
+        }
+        .Second-Side {
+            border: 1px solid blue;
+            width: 39%;
+        }
+
+}
