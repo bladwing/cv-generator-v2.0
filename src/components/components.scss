@@ -1,23 +1,126 @@
 .Side-Container {
-        display: flex;
-        border: 1px solid green;
-        height: 950px;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        h1 {
-            width: 100%;
-            text-align: center;
-            height: 10px;
+    display: flex;
+    border: 1px solid green;
+    height: 950px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    h1 {
+        width: 100%;
+        text-align: center;
+        height: 10px;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+    input {
+        border: 1px solid #BCBCBC;
+        border-radius: 4px;
+    
+    }:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px hsla(220, 100%, 50%, 80%);
+      }
+
+    .First-Side {
+        border: 1px solid red;
+        width: 1098px;
+        height: 90%;
+
+        .Short-inputs-Container {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 24px;
+            margin: 45px auto;
+            width: 838px;
+
+            .Short-inputs-field {
+                width: 419px;
+                height: 122px;
+                display: flex;
+                flex-wrap: wrap;
+
+                span,
+                label {
+                    width: 371px;
+                    margin: 0 auto;
+                }
+
+                label {
+                    font-family: 'Helvetica Neue';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 21px;
+
+                }
+
+                input {
+                    margin: 0 auto;
+                    width: 371px;
+                    height: 48px;
+             
+                }
+            }
         }
-        .First-Side{
-            border: 1px solid red;
-            width: 60%;
-            height: 90%;
+
+        .Long-inputs-field {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 122px;
+            margin-top: 13px;
+
+            label,
+            input,
+            span {
+                width: 798px;
+            }
+
+            input {
+                width: 798px;
+                height: 48px;
+            }
         }
-        .Second-Side {
-            border: 1px solid blue;
-            width: 39%;
-            height: 90%;
+
+        .Desctiption {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 41px auto;
+            width: 846px;
+            height: 148px;
+
+            label {
+                width: 798px;
+                height: 21px;
+            }
+
+            textarea {
+
+                width: 798px;
+                height: 103px;
+
+            }
         }
+
+        .Upload-file {
+            width: 100px;
+
+            input {
+                margin-left: 40px;
+            }
+        }
+    }
+
+
+
+
+
+    .Second-Side {
+        border: 1px solid blue;
+        width: 39%;
+        height: 90%;
+    }
 
 }
