@@ -43,7 +43,15 @@ const ExpInputs = () => {
             </tr>
           </thead>
         </table>
-        <Link to="/">Next</Link>
+
+
+        <div className="button-container">
+
+        <Link to="/">Back</Link>
+        <button>Next Step</button>
+        </div>
+    
+
       </form>
     </div>
   );

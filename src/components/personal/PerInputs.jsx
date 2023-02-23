@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Inputs = () => {
   return (
@@ -10,12 +9,12 @@ const Inputs = () => {
             <tr className="Short-inputs-Container">
               <td className="Short-inputs-field">
                 <label htmlFor="">Name</label>
-                <input type="text" name="" id="" placeholder="John"/>
+                <input type="text" name="" id="" placeholder="John" />
                 <span>Minimum 2 symbol</span>
               </td>
               <td className="Short-inputs-field">
                 <label htmlFor="">LastName</label>
-                <input type="text" name="" id="" placeholder="Manson"/>
+                <input type="text" name="" id="" placeholder="Manson" />
                 <span>Minimum 2 symbol</span>
               </td>
             </tr>
@@ -24,7 +23,7 @@ const Inputs = () => {
                 <input type="file" name="" id="" />
               </td>
             </tr>
-            <tr >
+            <tr>
               <td className="Desctiption">
                 <label htmlFor="">Description</label>
                 <textarea type="text" name="" id="" />
@@ -33,36 +32,24 @@ const Inputs = () => {
             <tr>
               <td className="Long-inputs-field">
                 <label htmlFor="">Email</label>
-                <input
-                  type="email"
-                  name=""
-                  id=""
-                
-                />
+                <input type="email" name="" id="" />
                 <span>minimum 2 symbol</span>
               </td>
-              </tr>
-              <tr >
+            </tr>
+            <tr>
               <td className="Long-inputs-field">
                 <label htmlFor="">Phone</label>
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                />
+                <input type="text" name="" id="" />
                 <span>minimum 2 symbol</span>
               </td>
-
-            
-      
             </tr>
             <tr>
               <td></td>
             </tr>
           </thead>
         </table>
+        <button>Next Step</button>
       </form>
-      <Link to="/expirience">Next</Link>
     </div>
   );
 };
