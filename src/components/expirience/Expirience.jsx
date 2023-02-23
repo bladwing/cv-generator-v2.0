@@ -5,6 +5,7 @@ import ExpPreview from './ExpPreview';
 const expirience = () => {
     return (
         <div className='Side-Container'>
+            <h1>Expirience</h1>
            <ExpInputs/>
            <ExpPreview/> 
         </div>

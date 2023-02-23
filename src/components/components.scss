@@ -3,13 +3,21 @@
         border: 1px solid green;
         height: 950px;
         justify-content: space-around;
+        flex-wrap: wrap;
+        h1 {
+            width: 100%;
+            text-align: center;
+            height: 10px;
+        }
         .First-Side{
             border: 1px solid red;
             width: 60%;
+            height: 90%;
         }
         .Second-Side {
             border: 1px solid blue;
             width: 39%;
+            height: 90%;
         }
 
 }

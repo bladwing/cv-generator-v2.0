@@ -7,6 +7,7 @@ import "../components.scss"
 const Personal = () => {
     return (
         <div className='Side-Container'>
+            <h1>Pesonal</h1>
             <Inputs/>
             <Preview/>
         </div>
