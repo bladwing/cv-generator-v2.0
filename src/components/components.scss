@@ -4,6 +4,7 @@
     height: 950px;
     justify-content: space-around;
     flex-wrap: wrap;
+
     h1 {
         width: 100%;
         text-align: center;
@@ -13,14 +14,17 @@
     table {
         margin: 0 auto;
     }
+
     input {
         border: 1px solid #BCBCBC;
         border-radius: 4px;
-    
-    }:focus {
+
+    }
+
+    :focus {
         outline: none;
         box-shadow: 0 0 0 1px hsla(220, 100%, 50%, 80%);
-      }
+    }
 
     .First-Side {
         border: 1px solid red;
@@ -59,7 +63,7 @@
                     margin: 0 auto;
                     width: 371px;
                     height: 48px;
-             
+
                 }
             }
         }
