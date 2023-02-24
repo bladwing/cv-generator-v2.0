@@ -11,12 +11,14 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navigate />
+       
         <Routes>
+          <Route path="/" element={<Main />} />
           <Route path="/personal" element={<Personal />} />
           <Route path="/expirience" element={<Expirience />} />
           <Route path="/education" element={<Educations />} />
         </Routes>
+        <Navigate />
       </BrowserRouter>
     </div>
   );
@@ -27,9 +29,19 @@ export default App;
 const Navigate = () => {
   return (
     <div className="navigate">
+      <Link to="/">Main</Link>
       <Link to="/personal">Personal</Link>
       <Link to="/expirience">Expirience</Link>
       <Link to="/education">Education</Link>
     </div>
   );
 };
+
+
+const Main = () => {
+  return (
+    <div>
+        <h1>This is Main Page</h1>
+    </div>
+  )
+}

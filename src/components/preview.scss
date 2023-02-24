@@ -2,6 +2,7 @@
     .Second-Side {
         border: 1px solid skyblue;
         width: 39%;
+        height: 90%;
         .Personal-info {
             text-align: center;
             border: 1px solid blue;
@@ -9,6 +10,11 @@
           .Expirience-info {
             border: 1px solid red;
             text-align: center;
+        }
+        .Education-info {
+            border: 1px solid green;
+            text-align: center;
+
         }
     }
 

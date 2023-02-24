@@ -18,7 +18,7 @@ const ExpInputs = ({ onChange }) => {
   };
 
   return (
-    <div className="First-Side">
+    <div>
       <form action="">
         <table>
           <thead>
@@ -61,7 +61,13 @@ const ExpInputs = ({ onChange }) => {
                 />
               </td>
               <td className="Short-inputs-field">
-                <input type="date" value={endDate} name="" id="" onChange={(e) => setEndDate(e.target.value)}/>
+                <input
+                  type="date"
+                  value={endDate}
+                  name=""
+                  id=""
+                  onChange={(e) => setEndDate(e.target.value)}
+                />
               </td>
             </tr>
             <tr>
@@ -82,7 +88,7 @@ const ExpInputs = ({ onChange }) => {
         </table>
 
         <div className="button-container">
-          <Link to="/">Back</Link>
+          <Link to="/personal">Previous</Link>
           <button>Next Step</button>
         </div>
       </form>

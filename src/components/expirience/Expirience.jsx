@@ -27,7 +27,7 @@ const Expirience = () => {
     <div className="Side-Container">
       <h1>Expirience</h1>
 
-      <div className="First-side">
+      <div className="First-Side">
         <ExpInputs onChange={DataReceiver} />
       </div>
       <div className="Second-Side">

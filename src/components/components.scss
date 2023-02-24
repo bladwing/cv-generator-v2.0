@@ -66,6 +66,18 @@
 
                 }
             }
+            .Short-inputs-Select {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                span {
+                    width: 798px;
+                }
+                select {
+                    width: 320px;
+                    height: 48px;
+                }
+            }
         }
 
         .Long-inputs-field {
@@ -101,11 +113,11 @@
             }
 
             textarea {
-
                 width: 798px;
                 height: 103px;
 
             }
+          
         }
 
         .Upload-file {
@@ -117,7 +129,14 @@
         }
     }
 
-
+    .button-container {
+        a {
+            text-decoration: none;
+        }
+        button {
+            
+        }
+    }
 
 
 
