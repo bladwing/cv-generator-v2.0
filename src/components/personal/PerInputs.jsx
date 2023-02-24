@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import useLocalStorage from 'react-use-localstorage';
 
 const Inputs = ({ onChange }) => {
-  const [name, setName] = useState("");
-  const [lastname, setLastname] = useState("");
-  const [file, setFile] = useState("");
-  const [about, setAbout] = useState("");
-  const [mail, setMail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [name, setName] = useLocalStorage('name');
+  const [lastname, setLastname] = useLocalStorage('lastname');
+  const [file, setFile] = useLocalStorage('file');
+  const [about, setAbout] = useLocalStorage('about');
+  const [mail, setMail] = useLocalStorage('email');
+  const [phone, setPhone] = useLocalStorage('phone');
 
   useEffect(() => {
-    handleChange();
+    handleLiveView();
   });
+
+  const handleLiveView = () => {
+    onChange({name, lastname, file, about, mail, phone});
+  };
 
   const Submit = (e) => {
     e.preventDefault();
   };
 
-  const handleChange = () => {
-    onChange(name, lastname, file, about, mail, phone);
-  };
 
   return (
-    <div className="First-Side">
       <form onSubmit={Submit}>
         <table>
           <thead>
@@ -30,6 +31,7 @@ const Inputs = ({ onChange }) => {
                 <label htmlFor="">Name</label>
                 <input
                   type="text"
+                  value={name}
                   name=""
                   id=""
                   placeholder="John"
@@ -41,6 +43,7 @@ const Inputs = ({ onChange }) => {
                 <label htmlFor="">LastName</label>
                 <input
                   type="text"
+                  value={lastname}
                   name=""
                   id=""
                   placeholder="Manson"
@@ -53,6 +56,7 @@ const Inputs = ({ onChange }) => {
               <td className="Upload-file">
                 <input
                   type="file"
+                  value={file}
                   name=""
                   id=""
                   onChange={(e) => setFile(e.target.value)}
@@ -64,6 +68,7 @@ const Inputs = ({ onChange }) => {
                 <label htmlFor="">Description</label>
                 <textarea
                   type="text"
+                  value={about}
                   name=""
                   id=""
                   onChange={(e) => setAbout(e.target.value)}
@@ -75,6 +80,7 @@ const Inputs = ({ onChange }) => {
                 <label htmlFor="">Email</label>
                 <input
                   type="email"
+                  value={about}
                   name=""
                   id=""
                   onChange={(e) => setMail(e.target.value)}
@@ -87,6 +93,7 @@ const Inputs = ({ onChange }) => {
                 <label htmlFor="">Phone</label>
                 <input
                   type="text"
+                  value={phone}
                   name=""
                   id=""
                   onChange={(e) => setPhone(e.target.value)}
@@ -101,7 +108,6 @@ const Inputs = ({ onChange }) => {
         </table>
         <button>Next Step</button>
       </form>
-    </div>
   );
 };
 export default Inputs;

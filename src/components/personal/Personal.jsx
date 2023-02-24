@@ -10,7 +10,7 @@ const Personal = () => {
   const [valueMail, setValueMail] = useState("");
   const [valuePhone, setValuephone] = useState("");
 
-  const handleChange = (name, lastname, file, about, mail, phone) => {
+  const DataReceiver = ({ name, lastname, file, about, mail, phone }) => {
     setValue(name);
     setValueLastname(lastname);
     setValueFile(file);
@@ -22,17 +22,20 @@ const Personal = () => {
   return (
     <div className="Side-Container">
       <h1>Pesonal</h1>
+      <div className="First-Side">
+        <Inputs onChange={DataReceiver} />
+      </div>
 
-      <Inputs onChange={handleChange} />
-
-      <Preview
-        name={valueName}
-        lastname={valueLastname}
-        file={valueFile}
-        about={valueAbout}
-        mail={valueMail}
-        phone={valuePhone}
-      />
+      <div className="Second-Side">
+        <Preview
+          name={valueName}
+          lastname={valueLastname}
+          file={valueFile}
+          about={valueAbout}
+          mail={valueMail}
+          phone={valuePhone}
+        />
+      </div>
     </div>
   );
 };
