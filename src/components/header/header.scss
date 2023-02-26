@@ -1,0 +1,26 @@
+.Header-Container {
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+        width: 100%;
+        margin-left: 13.5%;
+        height: 10px;
+    }
+    hr {
+        width: 798px;
+    }
+    button{
+        background-color: #fff;
+        border: none;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    p {
+        margin-left: 20px;
+        position: absolute;
+        left: 49%;
+        top: 8%;
+    }
+}

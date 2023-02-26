@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ExpInputs from "./ExpInputs";
 import ExpPreview from "./ExpPreview";
-import Header from "../personal/header/Header";
+import Header from "../header/Header";
 
 const Expirience = () => {
   const [positionValue, setPositionValue] = useState("");
@@ -11,7 +11,7 @@ const Expirience = () => {
   const [jobDescriptionValue, setJobDescriptionValue] = useState("");
 
   const [header] = useState("Expirience")
-  const [backLink] = useState("/personal")
+  const [page] = useState("1/2")
 
   const DataReceiver = (
     position,
@@ -30,7 +30,7 @@ const Expirience = () => {
   return (
     <div className="Side-Container">
       <div className="First-Side">
-      <Header header={header} backLink={backLink}/>
+      <Header header={header} page={page}/>
         <ExpInputs onChange={DataReceiver} />
       </div>
       <div className="Second-Side">

@@ -1,16 +1,9 @@
 .Side-Container {
     display: flex;
     border: 1px solid green;
-    height: 950px;
+    height: 1050px;
     justify-content: space-around;
     flex-wrap: wrap;
-
-    h1 {
-        width: 100%;
-        text-align: center;
-        height: 10px;
-    }
-
     table {
         margin: 0 auto;
     }
@@ -30,7 +23,7 @@
         border: 1px solid red;
         width: 1098px;
         height: 90%;
-
+        background-color: #F9F9F9;
         .Short-inputs-Container {
             display: flex;
             justify-content: space-between;

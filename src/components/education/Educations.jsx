@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import EduInputs from "./EduInputs";
 import EduPreview from "./EduPreview";
-import Headers from "../personal/header/Header";
+import Headers from "../header/Header";
 
 const Educations = () => {
   const [educationCenterValue, setEducationCenterValue] = useState("");
@@ -10,7 +10,8 @@ const Educations = () => {
   const [eduDescriptionValue, setEduDescriptionValue] = useState("");
 
   const [header] = useState("Education")
-  const [backLink] = useState("/expirience")
+  const [page] = useState("1/3")
+
 
   const DataReceiver = ({
     educationCenter,
@@ -27,7 +28,7 @@ const Educations = () => {
   return (
     <div className="Side-Container">
       <div className="First-Side">
-      <Headers header={header} backLink={backLink}/>
+      <Headers header={header} page={page}/>
         <EduInputs onChange={DataReceiver} />
       </div>
       <div className="Second-Side">

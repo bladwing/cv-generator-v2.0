@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Personal from "./components/personal/Personal";
 import Expirience from "./components/expirience/Expirience";
 import Educations from "./components/education/Educations";
+import Main from "./components/main/Main"
 
 import "./components/components.scss"
 import "./components/preview.scss"
@@ -38,10 +39,4 @@ const Navigate = () => {
 };
 
 
-const Main = () => {
-  return (
-    <div>
-        <h1>This is Main Page</h1>
-    </div>
-  )
-}
+
