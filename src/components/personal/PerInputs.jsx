@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
+import { useNavigate } from "react-router-dom";
 
 const Inputs = ({ onChange }) => {
   const [name, setName] = useLocalStorage("name");
@@ -10,6 +10,9 @@ const Inputs = ({ onChange }) => {
   const [mail, setMail] = useLocalStorage("email");
   const [phone, setPhone] = useLocalStorage("phone");
 
+
+  const Navigate = useNavigate();
+  
   useEffect(() => {
     handleLiveView();
   });
@@ -20,6 +23,7 @@ const Inputs = ({ onChange }) => {
 
   const Submit = (e) => {
     e.preventDefault();
+    Navigate("/expirience")
   };
 
   return (
@@ -80,7 +84,7 @@ const Inputs = ({ onChange }) => {
               <label htmlFor="">Email</label>
               <input
                 type="email"
-                value={about}
+                value={mail}
                 name=""
                 id=""
                 onChange={(e) => setMail(e.target.value)}

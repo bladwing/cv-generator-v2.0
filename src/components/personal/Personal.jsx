@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Inputs from "./PerInputs";
 import Preview from "./PerPreview";
+import Headers from "../Header";
 
 const Personal = () => {
   const [valueName, setValue] = useState("");
@@ -9,6 +10,9 @@ const Personal = () => {
   const [valueAbout, setValueAbout] = useState("");
   const [valueMail, setValueMail] = useState("");
   const [valuePhone, setValuephone] = useState("");
+
+  const [header] = useState("Personal Information")
+  const [backLink] = useState("/")
 
   const DataReceiver = ({ name, lastname, file, about, mail, phone }) => {
     setValue(name);
@@ -21,8 +25,9 @@ const Personal = () => {
 
   return (
     <div className="Side-Container">
-      <h1>Pesonal</h1>
+    
       <div className="First-Side">
+        <Headers header={header} backLink={backLink}/>
         <Inputs onChange={DataReceiver} />
       </div>
 

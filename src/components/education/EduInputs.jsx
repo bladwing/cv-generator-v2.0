@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
+import Degrees from "../../utils/Degrees.json";
 
 const EduInputs = ({ onChange }) => {
   const [educationCenter, setEducationCenter] =
@@ -8,6 +9,8 @@ const EduInputs = ({ onChange }) => {
   const [selectQuality, setSelectQuality] = useLocalStorage("selectQuality");
   const [endEduDate, setEndEduDate] = useLocalStorage("endEduDate");
   const [eduDescription, setEduDescription] = useLocalStorage("eduDescription");
+
+  const Navigate = useNavigate();
 
   useEffect(() => {
     handleLiveView();
@@ -17,8 +20,13 @@ const EduInputs = ({ onChange }) => {
     onChange({ educationCenter, selectQuality, endEduDate, eduDescription });
   };
 
+  const Submit = (e) => {
+    e.preventDefault();
+    Navigate("/resume");
+  };
+
   return (
-    <form action="">
+    <form action="" onSubmit={Submit}>
       <table>
         <thead>
           <tr>
@@ -43,8 +51,11 @@ const EduInputs = ({ onChange }) => {
                 id=""
                 onChange={(e) => setSelectQuality(e.target.value)}
               >
-                <option value="">---</option>
-                <option value="test">Test</option>
+                <option value="">Choose Degree</option>
+
+                {Degrees.map((degree) => (
+                  <option key={degree.id}>{degree.title}</option>
+                ))}
               </select>
             </td>
             <td className="Short-inputs-field">
@@ -74,9 +85,8 @@ const EduInputs = ({ onChange }) => {
         </thead>
       </table>
       <div className="button-container">
-      <Link to="/expirience">Previous</Link>
+        <Link to="/expirience">Previous</Link>
         <button>Next</button>
-        
       </div>
     </form>
   );

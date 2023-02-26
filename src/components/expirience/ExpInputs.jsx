@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
 
 const ExpInputs = ({ onChange }) => {
@@ -9,17 +9,25 @@ const ExpInputs = ({ onChange }) => {
   const [endDate, setEndDate] = useLocalStorage("endDate");
   const [jobDescription, setJobDescription] = useLocalStorage("jobDescription");
 
+  const Navigate = useNavigate();
+
   useEffect(() => {
     handleLiveView();
-  });
+  }, []);
 
   const handleLiveView = () => {
     onChange({ position, company, startDate, endDate, jobDescription });
   };
 
+
+  const Submit = (e) => {
+    e.preventDefault();
+    Navigate("/education")
+  };
+
   return (
     <div>
-      <form action="">
+      <form action="" onSubmit={Submit}>
         <table>
           <thead>
             <tr>
