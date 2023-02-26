@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Inputs from "./PerInputs";
 import Preview from "./PerPreview";
-import Headers from "../Header";
+import Headers from "./header/Header";
 
 const Personal = () => {
   const [valueName, setValue] = useState("");

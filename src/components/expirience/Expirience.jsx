@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ExpInputs from "./ExpInputs";
 import ExpPreview from "./ExpPreview";
-import Header from "../Header";
+import Header from "../personal/header/Header";
 
 const Expirience = () => {
   const [positionValue, setPositionValue] = useState("");
