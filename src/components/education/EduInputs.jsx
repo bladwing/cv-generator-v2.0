@@ -86,6 +86,11 @@ const EduInputs = ({ onChange }) => {
               ></textarea>
             </td>
           </tr>
+          <tr>
+              <td>
+              <button className="Add-more-button">Add Another</button>
+              </td>
+            </tr>
         </thead>
       </table>
       <div className="button-container">

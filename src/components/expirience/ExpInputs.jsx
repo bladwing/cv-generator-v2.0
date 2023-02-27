@@ -27,6 +27,11 @@ const ExpInputs = ({ onChange }) => {
     Navigate("/education")
   };
 
+  const AnotherExpirience = (e) => {
+    e.preventDefault();
+    console.log("Add new one")
+  }
+
   return (
     <div>
       <form action="" onSubmit={Submit}>
@@ -94,9 +99,14 @@ const ExpInputs = ({ onChange }) => {
                 ></textarea>
               </td>
             </tr>
+            <tr>
+              <td>
+              <button className="Add-more-button" onClick={AnotherExpirience}>Add Another</button>
+              </td>
+            </tr>
           </thead>
         </table>
-
+        
         <div className="button-container">
           <Link to="/personal">Previous</Link>
           <button>Next Step</button>

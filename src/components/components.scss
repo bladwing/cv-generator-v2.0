@@ -3,6 +3,7 @@
     height: 1050px;
     justify-content: space-around;
     flex-wrap: wrap;
+
     table {
         margin: 0 auto;
     }
@@ -22,6 +23,7 @@
         width: 1098px;
         height: 90%;
         background-color: #F9F9F9;
+
         .Short-inputs-Container {
             display: flex;
             justify-content: space-between;
@@ -122,15 +124,18 @@
             }
         }
     }
+
     .Back-button {
         position: absolute;
-       text-align: left;
+        text-align: left;
     }
+
     .button-container {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
         width: 73%;
+
         a {
             text-decoration: none;
             background-color: #6B40E3;
@@ -141,6 +146,7 @@
             padding: 17px 30px;
             gap: 20px;
         }
+
         button {
             background-color: #6B40E3;
             color: #fff;
@@ -154,7 +160,17 @@
         }
     }
 
-
-
-
+    .Add-more-button {
+        background: #62A1EB;
+        color: #fff;
+        border-radius: 4px;
+        padding: 18px 60px;
+        gap: 20px;
+        border: 0;
+        margin: 10px 0 7% 13%;
+        width: 289px;
+        height: 48px;
+        left: calc(50% - 289px/2 - 665.5px);
+        top: 805px;
+    }
 }
