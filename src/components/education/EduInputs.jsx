@@ -39,6 +39,7 @@ const EduInputs = ({ onChange }) => {
                 value={educationCenter}
                 name=""
                 id=""
+                placeholder="Microsoft"
                 onChange={(e) => setEducationCenter(e.target.value)}
               />
               <span>minimum 2 symbol</span>
@@ -80,6 +81,7 @@ const EduInputs = ({ onChange }) => {
                 id=""
                 cols="30"
                 rows="10"
+                placeholder="Description"
                 onChange={(e) => setEduDescription(e.target.value)}
               ></textarea>
             </td>

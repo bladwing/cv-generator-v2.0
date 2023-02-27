@@ -28,7 +28,7 @@ const Inputs = ({ onChange }) => {
 
   return (
     <form onSubmit={Submit}>
-      <table>
+      <table cellPadding={10}>
         <thead>
           <tr className="Short-inputs-Container">
             <td className="Short-inputs-field">
@@ -75,6 +75,7 @@ const Inputs = ({ onChange }) => {
                 value={about}
                 name=""
                 id=""
+                placeholder="Description"
                 onChange={(e) => setAbout(e.target.value)}
               />
             </td>
@@ -87,6 +88,7 @@ const Inputs = ({ onChange }) => {
                 value={mail}
                 name=""
                 id=""
+                placeholder="Email"
                 onChange={(e) => setMail(e.target.value)}
               />
               <span>minimum 2 symbol</span>
@@ -100,6 +102,7 @@ const Inputs = ({ onChange }) => {
                 value={phone}
                 name=""
                 id=""
+                placeholder="+995 555 555 555"
                 onChange={(e) => setPhone(e.target.value)}
               />
               <span>minimum 2 symbol</span>
