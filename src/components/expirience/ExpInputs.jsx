@@ -11,13 +11,15 @@ const ExpInputs = ({ onChange }) => {
 
   const Navigate = useNavigate();
 
+
   useEffect(() => {
     handleLiveView();
-  }, []);
-
+  });
+  
   const handleLiveView = () => {
-    onChange({ position, company, startDate, endDate, jobDescription });
+    onChange( position, company, startDate, endDate, jobDescription );
   };
+
 
 
   const Submit = (e) => {

@@ -1,6 +1,5 @@
 .Side-Container {
     display: flex;
-    border: 1px solid green;
     height: 1050px;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -20,7 +19,6 @@
     }
 
     .First-Side {
-        border: 1px solid red;
         width: 1098px;
         height: 90%;
         background-color: #F9F9F9;
