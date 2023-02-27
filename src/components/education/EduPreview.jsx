@@ -10,7 +10,7 @@ const EduPreview = ({
 }) => {
   return (
     <div>
-      <PerPreviw />
+      <PerPreviw/>
       <ExpPreview />
 
       <div className="Education-info">

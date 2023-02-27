@@ -2,6 +2,7 @@ import React from "react";
 
 const Preview = ({ name, lastname, file, about, mail, phone }) => {
   return (
+    <div>
     <div className="Personal-info">
       <h1>
         {name} {lastname}
@@ -11,6 +12,10 @@ const Preview = ({ name, lastname, file, about, mail, phone }) => {
       <h3>{mail}</h3>
       <h3>{phone}</h3>
     </div>
+ 
+
+    </div>
+
   );
 };
 

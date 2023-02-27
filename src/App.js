@@ -7,6 +7,7 @@ import Main from "./components/main/Main"
 import "./components/components.scss"
 import "./components/preview.scss"
 import "./App.scss";
+import Resume from "./components/resume/Resume";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/personal" element={<Personal />} />
           <Route path="/expirience" element={<Expirience />} />
           <Route path="/education" element={<Educations />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       
       </BrowserRouter>
@@ -34,6 +36,7 @@ const Navigate = () => {
       <Link to="/personal">Personal</Link>
       <Link to="/expirience">Expirience</Link>
       <Link to="/education">Education</Link>
+      <Link to="/resume">Resume</Link>
     </div>
   );
 };

@@ -23,6 +23,8 @@ const EduInputs = ({ onChange }) => {
   const Submit = (e) => {
     e.preventDefault();
     Navigate("/resume");
+
+    
   };
 
   return (
