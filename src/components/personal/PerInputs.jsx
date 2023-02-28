@@ -69,7 +69,11 @@ const Inputs = ({ onChange }) => {
           </tr>
           <tr>
             <td className="Upload-file">
-              <input type="file" name="photo" onChange={handleFileSelect} />
+            <h4>პირადი ფოტოს ატვირთვა</h4>
+              <input type="file" name="photo" id="file" onChange={handleFileSelect} />
+              <label htmlFor="file" className="upload-button">
+                    ატვირთვა
+                  </label>
             </td>
           </tr>
           <tr>
