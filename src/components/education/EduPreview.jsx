@@ -2,21 +2,23 @@ import React from "react";
 import PerPreviw from "../personal/PerPreview";
 import ExpPreview from "../expirience/ExpPreview";
 
+
 const EduPreview = ({
   educationCenter,
   selectQuality,
   endEduDate,
   eduDescription,
 }) => {
+
   return (
     <div>
-      <PerPreviw/>
+      <PerPreviw />
       <ExpPreview />
 
       <div className="Education-info">
         <h3>{educationCenter}</h3>
-        <h3>{selectQuality}</h3>
-        <h3>{endEduDate}</h3>
+        <h4>{selectQuality}</h4>
+        <h4>{endEduDate}</h4>
         <p>{eduDescription}</p>
       </div>
     </div>

@@ -23,7 +23,7 @@ const ExpPreview = () => {
             <PerPreview name={name} lastname={lastname} photo={photo} about={about} mail={mail} phone={phone}/>
 
             <div className='Expirience-info'>
-                <h3>{position}</h3>
+                <h1>{position}</h1>
                 <h3>{company}</h3>
                 <h4>{startDate} - {endDate}</h4>
                 <p>{jobDescription}</p>

@@ -1,6 +1,16 @@
 .Resume-Container {
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin-top: 10%;
+    flex-wrap: wrap;
+
+    height: 1080px;
+    margin: 2% auto;
+    button {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+    hr {
+        width: 662px;
+    }
 }

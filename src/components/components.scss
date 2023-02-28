@@ -1,6 +1,8 @@
 .Side-Container {
     display: flex;
+    width: 1820px;
     height: 1050px;
+    margin: 0 auto;
     justify-content: space-around;
     flex-wrap: wrap;
     input {
@@ -15,7 +17,7 @@
     }
 
     .First-Side {
-        width: 1098px;
+        width: 60%;
         height: 90%;
         background-color: #F9F9F9;
         table {
