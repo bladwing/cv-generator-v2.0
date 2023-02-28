@@ -1,12 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./header.scss";
 
 const Header = (props) => {
-  const Navigate = useNavigate();
 
   const GoHome = () => {
-    Navigate("/");
     localStorage.clear();
   };
 
@@ -14,9 +12,9 @@ const Header = (props) => {
     <div className="Header-Container">
       <h1>{props.header}</h1>
       <p>{props.page}</p>
-      <button className="Back-button" onClick={() => GoHome()}>
+      <Link to={"/"} className="Back-button" onClick={() => GoHome()}>
         <img src="/img/back.svg" alt="" />
-      </button>
+      </Link>
       <hr />
     </div>
   );

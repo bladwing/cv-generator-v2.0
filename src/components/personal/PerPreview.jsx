@@ -1,13 +1,12 @@
-import React from "react";
-
-const Preview = ({ name, lastname, file, about, mail, phone }) => {
+const Preview = ({ name, lastname, photo, about, mail, phone }) => {
+  
   return (
     <div>
       <div className="Personal-info">
         <h1>
           {name} {lastname}
         </h1>
-        <img src={file} alt="profilePhoto" className="Profile-Photo"/>
+        <img src={photo} alt="profilePhoto" className="Profile-Photo"/>
       
 
         <h4>

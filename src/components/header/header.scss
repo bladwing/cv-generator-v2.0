@@ -1,26 +1,41 @@
 .Header-Container {
     display: flex;
     flex-wrap: wrap;
+
     h1 {
         width: 100%;
         margin-left: 13.5%;
         height: 10px;
     }
+
     hr {
         width: 798px;
+        height: 1px;
     }
-    button{
-        background-color: #fff;
-        border: none;
-        font-size: 24px;
-        font-weight: 700;
-        border-radius: 40px;
-        padding: 10px;
+
+    a {
+        img {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 4%;
+            top: 9%;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            width: 16px;
+            height: 16px;
+            color: #1A1A1A;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+        }
     }
+
     p {
         margin-left: 20px;
         position: absolute;
-        left: 49%;
+        left: 48.5%;
         top: 8%;
     }
 }

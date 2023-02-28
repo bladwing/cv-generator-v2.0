@@ -2,22 +2,23 @@ import React, { useState } from "react";
 import Inputs from "./PerInputs";
 import Preview from "./PerPreview";
 import Headers from "../header/Header";
+import useLocalStorage from "react-use-localstorage";
 
 const Personal = () => {
   const [valueName, setValue] = useState("");
   const [valueLastname, setValueLastname] = useState("");
-  const [valueFile, setValueFile] = useState("");
   const [valueAbout, setValueAbout] = useState("");
   const [valueMail, setValueMail] = useState("");
   const [valuePhone, setValuephone] = useState("");
 
-  const [header] = useState("Personal Information")
-  const [page] = useState("1/3")
+  const [photo] = useLocalStorage("photo");
 
-  const DataReceiver = ({ name, lastname, file, about, mail, phone }) => {
+  const [header] = useState("Personal Information");
+  const [page] = useState("1/3");
+
+  const DataReceiver = ({ name, lastname, about, mail, phone }) => {
     setValue(name);
     setValueLastname(lastname);
-    setValueFile(file);
     setValueAbout(about);
     setValueMail(mail);
     setValuephone(phone);
@@ -25,9 +26,8 @@ const Personal = () => {
 
   return (
     <div className="Side-Container">
-    
       <div className="First-Side">
-        <Headers header={header} page={page}/>
+        <Headers header={header} page={page} />
         <Inputs onChange={DataReceiver} />
       </div>
 
@@ -35,7 +35,7 @@ const Personal = () => {
         <Preview
           name={valueName}
           lastname={valueLastname}
-          file={valueFile}
+          photo={photo}
           about={valueAbout}
           mail={valueMail}
           phone={valuePhone}

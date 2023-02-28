@@ -6,7 +6,8 @@ const ExpPreview = () => {
 
     const [name] = useLocalStorage('name');
     const [lastname] = useLocalStorage('lastname');
-    const [file] = useLocalStorage('file');
+ 
+    const [photo] = useLocalStorage("photo");
     const [about] = useLocalStorage('about');
     const [mail] = useLocalStorage('email');
     const [phone] = useLocalStorage('phone');
@@ -19,7 +20,7 @@ const ExpPreview = () => {
 
     return (
         <div>
-            <PerPreview name={name} lastname={lastname} file={file} about={about} mail={mail} phone={phone}/>
+            <PerPreview name={name} lastname={lastname} photo={photo} about={about} mail={mail} phone={phone}/>
 
             <div className='Expirience-info'>
                 <h3>{position}</h3>

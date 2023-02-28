@@ -5,26 +5,38 @@ import { useNavigate } from "react-router-dom";
 const Inputs = ({ onChange }) => {
   const [name, setName] = useLocalStorage("name");
   const [lastname, setLastname] = useLocalStorage("lastname");
-  const [file, setFile] = useLocalStorage("file");
+  const [photo, setPhoto] = useLocalStorage("photo");
   const [about, setAbout] = useLocalStorage("about");
   const [mail, setMail] = useLocalStorage("email");
   const [phone, setPhone] = useLocalStorage("phone");
 
-
   const Navigate = useNavigate();
-  
+
   useEffect(() => {
-    handleLiveView();
+    handleLiveView()
   });
 
   const handleLiveView = () => {
-    onChange({ name, lastname, file, about, mail, phone });
+    onChange({ name, lastname, photo, about, mail, phone });
   };
 
   const Submit = (e) => {
     e.preventDefault();
-    Navigate("/expirience")
+    Navigate("/expirience");
   };
+
+  const handleFileSelect = (e) => {
+    if (e.target.files[0]) {
+      console.log("photo: ", e.target.files);
+      setPhoto(e.target.files[0]);
+      const reader = new FileReader();
+      reader.addEventListener("load", () => {
+        setPhoto(reader.result);
+      });
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  };
+
 
   return (
     <form onSubmit={Submit}>
@@ -60,10 +72,8 @@ const Inputs = ({ onChange }) => {
             <td className="Upload-file">
               <input
                 type="file"
-                value={file}
-                name=""
-                id=""
-                onChange={(e) => setFile(e.target.value)}
+                name="photo"
+                onChange={handleFileSelect}
               />
             </td>
           </tr>
@@ -91,7 +101,7 @@ const Inputs = ({ onChange }) => {
                 placeholder="Email"
                 onChange={(e) => setMail(e.target.value)}
               />
-              <span>minimum 2 symbol</span>
+              <span>Please include @redberry.ge</span>
             </td>
           </tr>
           <tr>
@@ -105,7 +115,7 @@ const Inputs = ({ onChange }) => {
                 placeholder="+995 555 555 555"
                 onChange={(e) => setPhone(e.target.value)}
               />
-              <span>minimum 2 symbol</span>
+              <span>Please fill in Georgian format</span>
             </td>
           </tr>
           <tr>
