@@ -33,9 +33,8 @@ const ExpInputs = ({ onChange }) => {
   }
 
   return (
-    <div>
       <form action="" onSubmit={Submit}>
-        <table>
+        <table >
           <thead>
             <tr>
               <td className="Long-inputs-field">
@@ -112,7 +111,7 @@ const ExpInputs = ({ onChange }) => {
           <button>Next Step</button>
         </div>
       </form>
-    </div>
+ 
   );
 };
 

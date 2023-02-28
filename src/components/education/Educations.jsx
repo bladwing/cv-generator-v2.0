@@ -10,7 +10,7 @@ const Educations = () => {
   const [eduDescriptionValue, setEduDescriptionValue] = useState("");
 
   const [header] = useState("Education")
-  const [page] = useState("1/3")
+  const [page] = useState("3/3")
 
 
   const DataReceiver = ({

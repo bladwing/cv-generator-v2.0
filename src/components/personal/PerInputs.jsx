@@ -13,7 +13,7 @@ const Inputs = ({ onChange }) => {
   const Navigate = useNavigate();
 
   useEffect(() => {
-    handleLiveView()
+    handleLiveView();
   });
 
   const handleLiveView = () => {
@@ -36,7 +36,6 @@ const Inputs = ({ onChange }) => {
       reader.readAsDataURL(e.target.files[0]);
     }
   };
-
 
   return (
     <form onSubmit={Submit}>
@@ -70,11 +69,7 @@ const Inputs = ({ onChange }) => {
           </tr>
           <tr>
             <td className="Upload-file">
-              <input
-                type="file"
-                name="photo"
-                onChange={handleFileSelect}
-              />
+              <input type="file" name="photo" onChange={handleFileSelect} />
             </td>
           </tr>
           <tr>
@@ -125,7 +120,7 @@ const Inputs = ({ onChange }) => {
       </table>
 
       <div className="button-container">
-        <button>Next Step</button>
+        <button className="Pesronal-Alone-Button">Next Step</button>
       </div>
     </form>
   );

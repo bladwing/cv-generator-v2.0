@@ -1,5 +1,4 @@
 const Preview = ({ name, lastname, photo, about, mail, phone }) => {
-  
   return (
     <div>
       <div className="Personal-info">
@@ -13,7 +12,6 @@ const Preview = ({ name, lastname, photo, about, mail, phone }) => {
           <img
             src="img/email-icon.png"
             alt=""
-            style={{ display: mail === "" ? "none" : "block" }}
           />
           {mail}
         </h4>
@@ -21,7 +19,6 @@ const Preview = ({ name, lastname, photo, about, mail, phone }) => {
           <img
             src="img/phone-icon.png"
             alt=""
-            style={{ display: phone === "" ? "none" : "block" }}
           />
           {phone}
         </h4>

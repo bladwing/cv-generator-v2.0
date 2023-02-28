@@ -11,7 +11,7 @@ const Expirience = () => {
   const [jobDescriptionValue, setJobDescriptionValue] = useState("");
 
   const [header] = useState("Expirience")
-  const [page] = useState("1/2")
+  const [page] = useState("2/3")
 
   const DataReceiver = (
     position,

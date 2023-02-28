@@ -29,7 +29,7 @@ const EduInputs = ({ onChange }) => {
 
   return (
     <form action="" onSubmit={Submit}>
-      <table>
+      <table cellPadding={10}>
         <thead>
           <tr>
             <td className="Long-inputs-field">
@@ -95,7 +95,7 @@ const EduInputs = ({ onChange }) => {
       </table>
       <div className="button-container">
         <Link to="/expirience">Previous</Link>
-        <button>Next</button>
+        <button>Next Step</button>
       </div>
     </form>
   );
