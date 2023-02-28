@@ -54,7 +54,8 @@ const EduInputs = ({ onChange }) => {
                 id=""
                 onChange={(e) => setSelectQuality(e.target.value)}
               >
-                <option value="">Choose Degree</option>
+              
+                <option value={""}>{selectQuality}</option>
 
                 {Degrees.map((degree) => (
                   <option key={degree.id}>{degree.title}</option>
