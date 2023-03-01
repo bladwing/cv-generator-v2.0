@@ -1,5 +1,4 @@
 import React from "react";
-import PerPreviw from "../personal/PerPreview";
 import ExpPreview from "../expirience/ExpPreview";
 
 
@@ -12,7 +11,6 @@ const EduPreview = ({
 
   return (
     <div>
-      <PerPreviw />
       <ExpPreview />
 
       <div className="Education-info">

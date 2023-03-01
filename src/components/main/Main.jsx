@@ -12,6 +12,7 @@ const Main = () => {
       <Link to="/personal">
         <button>Create Resume</button>
       </Link>
+      <img src="/img/stamp.svg" alt="Main-Stamp"  className="Stamp"/>
     </div>
   );
 };
