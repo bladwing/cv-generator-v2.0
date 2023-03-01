@@ -25,13 +25,13 @@ const Resume = () => {
     <div className="Resume-Container">
       <button>Back to main</button>
 
-      <div className="Second-Side">
-        <div className="Personal-info">
+      <div className="Resume-Page">
+        <div className="Personal-Container">
           <h1>
             {name} {lastname}
           </h1>
 
-          <img src={photo} alt="Profile" className="Profile-Photo" />
+          <img src={photo} alt="Profile" className="Profile-Photo " />
           <ul>
             <li>
               <img src="img/email-icon.png" alt="" />
@@ -42,21 +42,27 @@ const Resume = () => {
               {phone}
             </li>
           </ul>
-          <p style={{ lineBreak: "anywhere" }}>{about}</p>
+          <div className="About-Me-Resume">
+            <h2>About Me</h2>
+            <p style={{ lineBreak: "anywhere" }}>{about}</p>
+          </div>
         </div>
+
         <hr />
 
-        <div className="Expirience-info">
-          <h2>{position}</h2>
-          <h3>{company}</h3>
+        <div className="Expirience-Container">
+          <h2>Expirience</h2>
+          <h4>{position}, {company} </h4>
+          
           <span> {startDate}</span>
           <span> {endDate}</span>
           <p>{jobDescription}</p>
         </div>
         <hr />
-        <div className="Education-info">
-          <h2>{educationCenter}</h2>
-          <h3>{selectQuality}</h3>
+        <div className="Education-Container">
+          <h2>Education</h2>
+          <h4>{educationCenter}, {selectQuality}</h4>
+          
           <span>{endEduDate}</span>
           <p>{eduDescription}</p>
         </div>

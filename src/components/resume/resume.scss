@@ -1,16 +1,81 @@
 .Resume-Container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    height: 1080px;
     margin: 2% auto;
+
     button {
         position: absolute;
         left: 100px;
         top: 100px;
     }
+
     hr {
         width: 662px;
+    }
+
+    .Resume-Page {
+        width: 822px;
+        height: 1080px;
+        margin: 0 auto;
+        border: 1px solid black;
+
+        h2 {
+            color: #F93B1D;
+        }
+
+        p {
+            width: 662px;
+        }
+        span {
+            font-style: italic;
+            color: #909090;
+        }
+        .Personal-Container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-left: 10%;
+
+            h1 {
+                color: #F93B1D;
+                margin-top: 68px;
+                width: 60%;
+            }
+
+            .Profile-Photo {
+                width: 246px;
+                height: 246px;
+                border-radius: 133px;
+                margin-top: 48px;
+            }
+
+            ul {
+                list-style-type: none;
+                margin-left: -5%;
+                margin-top: -20%;
+
+            }
+
+            .About-Me-Resume {
+                width: 100%;
+                margin-top: -15%;
+
+                p {
+                    width: 60%;
+
+                }
+            }
+
+        }
+
+        .Expirience-Container {
+            margin-left: 10%;
+
+        }
+
+        .Education-Container {
+            margin-left: 10%;
+
+
+
+        }
     }
 }
