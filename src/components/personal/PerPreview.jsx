@@ -19,7 +19,7 @@ const Preview = ({ name, lastname, photo, about, mail, phone }) => {
       </div>
 
       <div className="About-Me">
-        <h3 style={{ display: about === "" ? "none" : "block" }}>About Me</h3>
+        <h2 style={{ display: about === "" ? "none" : "block" }}>About Me</h2>
         <p style={{ lineBreak: "anywhere" }}>{about}</p>
       </div>
 
