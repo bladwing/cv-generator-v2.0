@@ -45,4 +45,6 @@ npm start
 Front End - **localhost:3000** </br> 
 
 
+[ Live View ](https://cv-generator-ponarenko.netlify.app/)
+
 
