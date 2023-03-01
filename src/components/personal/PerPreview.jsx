@@ -22,6 +22,7 @@ const Preview = ({ name, lastname, photo, about, mail, phone }) => {
         <p style={{ lineBreak: "anywhere" }}>{about}</p>
       </div>
       <hr />
+      <img src="/img/bottom-logo.svg" alt="something-logotip" className="something-logotip-botton"/>
     </div>
   );
 }; 
