@@ -37,6 +37,7 @@ const Navigate = () => {
       <Link to="/expirience">Expirience</Link>
       <Link to="/education">Education</Link>
       <Link to="/resume">Resume</Link>
+      <button onClick={() => localStorage.clear()}>Clear Storage</button>
     </div>
   );
 };

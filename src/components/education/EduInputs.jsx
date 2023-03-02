@@ -22,10 +22,8 @@ const EduInputs = ({ onChange }) => {
 
   const Submit = (e) => {
     e.preventDefault();
-    localStorage.setItem("PopUp" , true)
+    localStorage.setItem("PopUp", true);
     Navigate("/resume");
-
-    
   };
 
   return (
@@ -53,11 +51,10 @@ const EduInputs = ({ onChange }) => {
                 type=""
                 name=""
                 id=""
+                value={selectQuality}
                 onChange={(e) => setSelectQuality(e.target.value)}
               >
-              
-                <option value={""}>{selectQuality}</option>
-
+                <option value={""}>Choose Degree</option>
                 {Degrees.map((degree) => (
                   <option key={degree.id}>{degree.title}</option>
                 ))}
@@ -89,10 +86,10 @@ const EduInputs = ({ onChange }) => {
             </td>
           </tr>
           <tr>
-              <td>
+            <td>
               <button className="Add-more-button">Add Another</button>
-              </td>
-            </tr>
+            </td>
+          </tr>
         </thead>
       </table>
       <div className="button-container">
