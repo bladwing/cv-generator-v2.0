@@ -22,6 +22,7 @@ const EduInputs = ({ onChange }) => {
 
   const Submit = (e) => {
     e.preventDefault();
+    localStorage.setItem("PopUp" , true)
     Navigate("/resume");
 
     

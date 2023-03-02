@@ -29,11 +29,13 @@ const ExpPreview = () => {
       />
 
       <div className="Expirience-info">
-        <h2>Expirience</h2>
-        <h4>
+        <h2 style={{ display: position === "" ? "none" : "block" }}>
+          Expirience
+        </h2>
+        <h4 style={{ display: position === "" ? "none" : "block" }}>
           {position}, {company}
         </h4>
-        <span>
+        <span style={{ display: startDate === "" ? "none" : "block" }}>
           {startDate} - {endDate}
         </span>
         <p>{jobDescription}</p>

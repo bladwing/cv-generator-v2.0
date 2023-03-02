@@ -14,8 +14,8 @@ const EduPreview = ({
       <ExpPreview />
 
       <div className="Education-info">
-      <h2>Education</h2>
-        <h4>{educationCenter}, {selectQuality}</h4>
+      <h2 style={{ display: educationCenter === "" ? "none" : "block" }}>Education</h2>
+        <h4 style={{ display: educationCenter === "" ? "none" : "block" }}>{educationCenter}, {selectQuality}</h4>
         <span>{endEduDate}</span>
         <p>{eduDescription}</p>
       </div>
