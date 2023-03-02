@@ -1,11 +1,23 @@
 .Resume-Container {
     margin: 2% auto;
 
-
-    button {
-        position: absolute;
-        left: 100px;
-        top: 100px;
+    .Back-button-resume {
+        img {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 10%;
+            top: 12%;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            width: 16px;
+            height: 16px;
+            color: #1A1A1A;
+            background-color: #F9F9F9;
+            padding: 10px;
+            border-radius: 50%;
+        }
     }
 
     hr {
@@ -15,7 +27,7 @@
     .Resume-Page {
         width: 822px;
         height: 1080px;
-        margin: 0 auto;
+        margin: 54px auto;
         border: 0.8px solid #000000;
 
         h2 {
@@ -25,10 +37,12 @@
         p {
             width: 662px;
         }
+
         span {
             font-style: italic;
             color: #909090;
         }
+
         .Personal-Container {
             display: flex;
             flex-wrap: wrap;
@@ -78,5 +92,19 @@
 
 
         }
+    }
+
+    .Resume-Popup {
+        position: absolute;
+        text-align: center;
+        top: 12%;
+        right: 2%;
+        width: 427px;
+        height: 167px;
+        border: 1px solid red;
+        background: #FFFFFF;
+        border: 1px solid #E4E4E4;
+        box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
     }
 }

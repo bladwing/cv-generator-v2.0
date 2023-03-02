@@ -1,5 +1,7 @@
 import useLocalStorage from "react-use-localstorage";
+import {Link} from "react-router-dom"
 import "./resume.scss";
+import Popup from "./Popup";
 
 const Resume = () => {
   const [name] = useLocalStorage("name");
@@ -23,7 +25,10 @@ const Resume = () => {
 
   return (
     <div className="Resume-Container">
-      <button>Back to main</button>
+   
+      <Link to={"/"} className="Back-button-resume" >
+        <img src="/img/back.svg" alt="" />
+      </Link>
 
       <div className="Resume-Page">
         <div className="Personal-Container">
@@ -67,6 +72,7 @@ const Resume = () => {
           <p>{eduDescription}</p>
         </div>
       </div>
+      <Popup/>
     </div>
   );
 };
