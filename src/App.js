@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navigate />
+     
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/personal" element={<Personal />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/education" element={<Educations />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
-      
+        <Navigate />
       </BrowserRouter>
     </div>
   );
@@ -32,6 +32,7 @@ export default App;
 const Navigate = () => {
   return (
     <div className="navigate">
+      <h2>Temporary menu</h2>
       <Link to="/">Main</Link>
       <Link to="/personal">Personal</Link>
       <Link to="/expirience">Expirience</Link>
