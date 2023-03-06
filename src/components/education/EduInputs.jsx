@@ -20,7 +20,13 @@ const EduInputs = ({ onChange }) => {
     onChange({ educationCenter, selectQuality, endEduDate, eduDescription });
   };
 
-  const Submit = (e) => {
+
+const ForSend = [educationCenter, selectQuality, endEduDate, endEduDate]
+
+console.log(ForSend)
+
+
+  const Submit = async (e) => {
     e.preventDefault();
     localStorage.setItem("PopUp", true);
     Navigate("/resume");

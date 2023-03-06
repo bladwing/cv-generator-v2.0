@@ -9,13 +9,21 @@ const EduPreview = ({
   eduDescription,
 }) => {
 
+
+
+  
+const Style = {
+  display: educationCenter === "" ? "none" : "block" 
+}
+
+
   return (
     <div>
       <ExpPreview />
 
       <div className="Education-info">
-      <h2 style={{ display: educationCenter === "" ? "none" : "block" }}>Education</h2>
-        <h4 style={{ display: educationCenter === "" ? "none" : "block" }}>{educationCenter}, {selectQuality}</h4>
+      <h2 style={Style}>Education</h2>
+        <h4 style={Style}>{educationCenter}, {selectQuality}</h4>
         <span>{endEduDate}</span>
         <p>{eduDescription}</p>
       </div>
