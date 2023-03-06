@@ -148,7 +148,6 @@
         justify-content: space-between;
         margin: 0 auto 200px;
         width: 73%;
-
         a {
             text-decoration: none;
             background-color: #6B40E3;
@@ -158,10 +157,18 @@
             align-items: center;
             padding: 17px 30px;
             gap: 20px;
+           
+            
         }
         .Pesronal-Alone-Button {
-            position: absolute;
-            margin-left: 36%;
+            float: right;
+            position: relative;
+            left: 130px;
+            height: 52px;
+            bottom: 4px;
+        
+           
+        
         }
 
         button {
