@@ -37,7 +37,7 @@ const Resume = () => {
           </h1>
 
           <img src={photo} alt="Profile" className="Profile-Photo " />
-          <ul>
+          <ul className="Icon-Container">
             <li>
               <img src="img/email-icon.png" alt="" />
               {mail}

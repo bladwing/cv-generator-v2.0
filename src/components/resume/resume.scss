@@ -1,13 +1,9 @@
 .Resume-Container {
-    margin: 2% auto;
-
     .Back-button-resume {
         img {
-            display: flex;
-            justify-content: center;
             position: absolute;
-            left: 10%;
-            top: 12%;
+            top: 5%;
+            left: 2%;
             font-weight: 700;
             font-size: 24px;
             line-height: 29px;
@@ -19,7 +15,6 @@
             border-radius: 50%;
         }
     }
-
     hr {
         width: 662px;
     }
@@ -52,7 +47,7 @@
             h1 {
                 color: #F93B1D;
                 margin-top: 68px;
-                width: 60%;
+                width: 50%;
             }
 
             .Profile-Photo {
@@ -60,25 +55,32 @@
                 height: 246px;
                 border-radius: 133px;
                 margin-top: 48px;
+                margin-right: 20px;
             }
 
-            ul {
+            .Icon-Container {
                 list-style-type: none;
-                margin-left: -5%;
-                margin-top: -20%;
-
-            }
-
-            .About-Me-Resume {
-                width: 100%;
-                margin-top: -15%;
-
-                p {
-                    width: 60%;
-
+                width: 300px;
+                margin-left: -38px;
+                margin-top: -180px;
+                height: 50px;
+                li {
+                    text-align: left;
+                    font-size: 18px;
+                    img {
+                        padding-right: 10px;
+                        width: 20px;
+                    }
                 }
             }
-
+            .About-Me-Resume {
+                width: 400px;
+                margin-left: -300px;
+                margin-top: -130px;
+                p {
+                    width: 100%;
+                }
+            }
         }
 
         .Expirience-Container {

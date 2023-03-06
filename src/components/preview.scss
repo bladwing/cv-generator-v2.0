@@ -9,8 +9,8 @@
     }
     hr {
         width: 662px;
-        height: 1px;
-        margin-right: 80px; 
+        height: 0px;
+
     }
     span {
         font-style: italic;
@@ -66,6 +66,11 @@
         p{
             width: 570px;
         }
+        hr {
+            width: 662px;
+            height: 0px;
+
+        }
     }
 
     .Education-info {
@@ -76,6 +81,11 @@
         }
         p{
             width: 570px;
+        }
+        hr {
+            width: 662px;
+            height: 0px;
+
         }
 
     }

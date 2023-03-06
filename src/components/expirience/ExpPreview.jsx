@@ -17,6 +17,10 @@ const ExpPreview = () => {
   const [endDate] = useLocalStorage("endDate");
   const [jobDescription] = useLocalStorage("jobDescription");
 
+const style ={
+  display: position === "" ? "none" : "block"
+}
+
   return (
     <div>
       <PerPreview
@@ -29,17 +33,17 @@ const ExpPreview = () => {
       />
 
       <div className="Expirience-info">
-        <h2 style={{ display: position === "" ? "none" : "block" }}>
+        <h2 style={style}>
           Expirience
         </h2>
-        <h4 style={{ display: position === "" ? "none" : "block" }}>
+        <h4 style={style}>
           {position}, {company}
         </h4>
         <span style={{ display: startDate === "" ? "none" : "block" }}>
           {startDate} - {endDate}
         </span>
         <p>{jobDescription}</p>
-        <hr />
+        <hr style={style}/>
       </div>
     </div>
   );
